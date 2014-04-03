@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/news.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://startbootstrap.com/templates/scrolling-nav/css/scrolling-nav.css">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-nav" href="index.php">
+                    <img id="logoIMG" src="img/logo.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul id="navUL" class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Abschlüsse</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#services">Kurse</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Kursradar</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Anbieter</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Coaches</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Tipps</a>
+                    </li>
+                </ul>
+
+                <div class="col-sm-2 col-md-2">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/bg1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/bg2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1 id="heroTitle">Informatik &amp; Telekommunikation</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/bg3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1>h1 Text with  <a href="http://www.google.com">link</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-text hidden-xs">
+            <div class="col-md-12 text-center">
+                <!-- <div id="topBar">
+                    <a href="/"><img id="logo" src="img/logo.png"></a>
+                </div> -->
+                <!-- <div id="searchBar" class="input-group custom-search-form col-md-2">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div> --><!-- /input-group -->
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+<!-- <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+            </div>
+
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="about.html">About</a>
+                    </li>
+                    <li><a href="services.html">Services</a>
+                    </li>
+                    <li><a href="contact.php">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li><a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li><a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li><a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li><a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li><a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li><a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li><a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a>
+                            </li>
+                            <li><a href="404.html">404</a>
+                            </li>
+                            <li><a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search" action="http://bootsnipp.com/search" method="GET" id="search-form">
+                        <div class="input-group" id="searchbar">
+                            <input type="text" class="form-control" placeholder="suchen" name="q" style="padding:6px 6px;">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+    <div class="section" style="padding-top:70px;">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <nav class="nav-sidebar">
+                <ul class="nav">
+                    <li class="active"><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">About</a></li>
+                    <li><a href="javascript:;">Products</a></li>
+                    <li><a href="javascript:;">FAQ</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-sm-8">
+            <h2 id="contentTitle">News</h2><br />
+            <div class="blockquote-box clearfix">
+                <div class="square pull-left">
+                    <img src="http://placehold.it/60/E6E6E6/FFF&text=news" alt="" class="" />
+                </div>
+                <h4>
+                    News</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div>
+            <div class="blockquote-box clearfix">
+                <div class="square pull-left">
+                    <img src="http://placehold.it/60/E6E6E6/FFF&text=news" alt="" class="" />
+                </div>
+                <h4>
+                    Neuigkeiten</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div>
+            <div class="blockquote-box clearfix">
+                <div class="square pull-left">
+                    <img src="http://placehold.it/60/E6E6E6/FFF&text=news" alt="" class="" />
+                </div>
+                <h4>
+                    Neus</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div>
+            <!-- <div class="blockquote-box blockquote-primary clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-music glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Let's music play</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante. <a href="http://www.jquery2dotnet.com/search/label/jquery">jquery2dotnet</a>
+                </p>
+            </div>
+            <div class="blockquote-box blockquote-success clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-tree-conifer glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Tree conifer</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div> -->
+        </div>
+        <div class="col-sm-2">
+        <nav class="nav-sidebar pull-right">
+                <ul class="nav">
+                    <!-- <li class="active"><a href="javascript:;">Home</a></li> -->
+                    <!-- <li><a href="javascript:;">A long link will naturally wrap around</a></li> -->
+                    <li><a href="javascript:;"><h4>Merkliste</h4>Zur Zeit befinden sich keine Kurse in der Merkliste</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="javascript:;"><h4>Topanbieter</h4>Zur Zeit befinden sich keine Kurse in der Merkliste</a></li>
+                    <!-- <li class="text-overflow" title="A long link with .text-overflow"><a href="javascript:;">A link with .text-overflow can be applied in case it's too long!</a></li>
+                    <li>
+                        <a href="javascript:;" class="media">
+                            <span class="pull-left">
+                                <i class="media-object glyphicon glyphicon-list"></i>
+                            </span>
+                            <div class="media-body">
+                                A media object can also be a link, making longer wrapping links play well with the icons!
+                            </div>
+                        </a>
+                    </li>
+                    <li class="text-overflow" title="Combine them all to make an awesome, safe solution!">
+                        <a href="javascript:;" class="media">
+                            <span class="pull-left">
+                                <i class="media-object glyphicon glyphicon-list"></i>
+                            </span>
+                            <div class="media-body">
+                                Combine them all to make an awesome, safe solution!
+                            </div>
+                        </a>
+                    </li> -->
+                    <li class="nav-divider"></li>
+                    <!-- <li><a href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign in</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+<!--     <div class="section-colored text-center">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Modern Business: A Clean &amp; Simple Full Website Template by Start Bootstrap</h2>
+                    <p>A complete website design featuring various single page templates from Start Bootstraps library of free HTML starter templates.</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /.section-colored -->
+
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Topanbieter</h2>
+                    <hr>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450">
+                    </a>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Berufliche Weiterbildung</h2>
+                    <hr>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Bau-Gebäudetechnik">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Bildung Soziales">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Chemie Physik">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Elektrotechnik">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Fahrzeuge">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Gastgewerbe Tourismus">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Gestaltung Kunst Druck">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Gesundheit">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Holz Innenausbau">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Informatik Telekommunikation">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Kader Management
+">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Kultur Musik">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Metall Maschinen">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Natur Nahrung">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Planung Konstruktion">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Schönheit Sport">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Sprachen">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Textilien">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Verkauf">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Verkehr Logistik">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-home-portfolio" src="http://placehold.it/700x450/CCCCCC/FFF&text=Wirtschaft Verwaltung">
+                    </a>
+                </div>
+                </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+    <!-- <div class="section-colored">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Modern Business Features Include:</h2>
+                    <ul>
+                        <li>Bootstrap 3 Framework</li>
+                        <li>Mobile Responsive Design</li>
+                        <li>Predefined File Paths</li>
+                        <li>Working PHP Contact Page</li>
+                        <li>Minimal Custom CSS Styles</li>
+                        <li>Unstyled: Add Your Own Style and Content!</li>
+                        <li>Font-Awesome fonts come pre-installed!</li>
+                        <li>100% <strong>Free</strong> to Use</li>
+                        <li>Open Source: Use for any project, private or commercial!</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img class="img-responsive" src="http://placehold.it/700x450/ffffff/cccccc">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img class="img-responsive" src="http://placehold.it/700x450">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Modern Business Features Include:</h2>
+                    <ul>
+                        <li>Bootstrap 3 Framework</li>
+                        <li>Mobile Responsive Design</li>
+                        <li>Predefined File Paths</li>
+                        <li>Working PHP Contact Page</li>
+                        <li>Minimal Custom CSS Styles</li>
+                        <li>Unstyled: Add Your Own Style and Content!</li>
+                        <li>Font-Awesome fonts come pre-installed!</li>
+                        <li>100% <strong>Free</strong> to Use</li>
+                        <li>Open Source: Use for any project, private or commercial!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row well">
+            <div class="col-lg-8 col-md-8">
+                <h4>'Modern Business' is a ready-to-use, Bootstrap 3 updated, multi-purpose HTML theme!</h4>
+                <p>For more templates and more page options that you can integrate into this website template, visit Start Bootstrap!</p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">See More Templates!</a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Company 2013</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+ <script>
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         var scrollTop = 506;
+//         if($(window).scrollTop() >= scrollTop){
+//             $('.navbar').css({
+//                 position : 'fixed',
+//                 top : '0',
+//                 opacity : '0.8'
+//             });
+
+//             $('.firstContainer').css({
+//                 "marginTop" : "80px"
+//             });
+
+            
+
+
+//         }
+//         if($(window).scrollTop() < scrollTop){
+//             $('.navbar').removeAttr('style'); 
+            
+//             $('.firstContainer').removeAttr('style');
+//         }
+//     })
+// })
+// </script>
+<script type="text/javascript">
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 955) {
+        $(".navbar-brand").addClass("scrolledLogo");
+    } else {
+        $(".navbar-brand").removeClass("scrolledLogo");
+    }
+});
+</script>
+<script type="text/javascript">
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $("#logoIMG").addClass("scrolledLogoIMG");
+    } else {
+        $("#logoIMG").removeClass("scrolledLogoIMG");
+    }
+});
+</script>
+<script type="text/javascript">
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 150) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});</script>
+<script type="text/javascript">
+function resize() {
+    if ($(window).width() > 767) {
+     $('#navUL').addClass('pull-right');
+    }
+    else {$('#navUL').removeClass('pull-right');}
+}
+
+$(document).ready( function() {
+    $(window).resize(resize);
+    resize();
+});</script>
+</body>
+
+</html>
